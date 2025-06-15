@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Padia</title>
+    <link rel="icon" type="image/png" href="earth-transparent-logo-1-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Wiki Padia</h1>
+        <p class="desc">Recherche simple et facile</p>
+    </header>
+    <div class="btn">
+        <button class="btn-nav" id="btn-nav" style="display: block;">Pages ...</button>
+        <button class="btn-nav" id="btn-creat" style="display: block;">Creer</button>
+    </div>
+    <nav class="nav" id="nav" style="display: none;">
+        <a href="#accueil">Accueil</a>
+        <a href="#page1">Actualités (Wiki)</a>
+        <a href="#page2">Site(s)</a>
+        <a href="#page3">Infos dev</a>
+        <a href="#page4">Cours de dev</a>
+    </nav>
+    <section id="accueil">
+        <h2>Accueil</h2>
+        <p>Bienvenue sur Wiki Pedia, une source d'information gratuite en ligne et open source</p>
+        <p>Découvrir ...</p>
+    </section>
+    <section id="page1" style="display:none;">
+        <h2>Page 1</h2>
+        <p>Contenu de la page 1.</p>
+    </section>
+    <section id="page2" style="display:none;">
+        <h2>Les sites que j'ai codés</h2>
+        <p>J'adore coder des petits projets comme ce site, je vais vous en présenter quelques-uns ...</p>
+        <div class="site">
+            <ul>
+                <li>
+                    <h3>Fake ENT</h3>
+                    <p class="lien" id="lien-ENT"><u>https://github.com/Alpha604/Fake-ENT</u></p>
+                    <p>Un petit site que j'ai codé en HTML, CSS, JavaScript qui reprend l'ENT du collège, le plus représentatif possible en reproduisant la même interface de connexion et d'accueil</p>
+                </li>
+                <li>
+                    <h3>Wiki Padia</h3>
+                    <p class="lien" id="lien-Wiki"><u>https://github.com/Alpha604/Wiki-Padia</u></p>
+                    <p>Le site que vous êtes en train de consulter s'appelle "Wiki-Padia", un site qui permet de suivre l'actu ou de d'apprendre</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="page3" style="display:none;">
+        <h2>Page 3</h2>
+        <p>Contenu de la page 3.</p>
+    </section>
+    <script src="script.js"></script>
+    <script src="lien.js"></script>
+</body>
+<footer>
+    <p>&copy; 2025 Roméo LEONARD. Tous droits réservés.</p>
+</footer>
+</html>
