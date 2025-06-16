@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Padia</title>
+    <link rel="icon" type="image/png" href="earth-transparent-logo-1-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Wiki Padia</h1>
+        <p class="desc">Recherche simple et facile</p>
+    </header>
+    <div class="btn">
+        <button class="btn-nav" id="btn-nav" style="display: block;">Pages</button>
+        <button class="btn-nav" id="btn-creat" style="display: block;">Creer</button>
+    </div>
+    <nav class="nav" id="nav" style="display: none;">
+        <a href="#accueil">Accueil</a>
+        <a href="#page1">Actualités (Wiki)</a>
+        <a href="#page2">Site(s)</a>
+        <a href="#page3">Infos dev</a>
+        <a href="#page4">Apprendre a coder</a>
+        <a href="#page5">Espace Dev</a>
+    </nav>
+    <section id="accueil">
+        <h2>Accueil</h2>
+        <p>Bienvenue sur Wiki Pedia, une source d'information gratuite en ligne et open source</p>
+        <p>Découvrir ...</p>
+    </section>
+    <section id="page1" style="display:none;">
+        <h2>Page 1</h2>
+        <p>Contenu de la page 1.</p>
+    </section>
+    <section id="page2" style="display:none;">
+        <h2>Les sites que j'ai codés</h2>
+        <p>J'adore coder des petits projets comme ce site, je vais vous en présenter quelques-uns ...</p>
+        <div class="site">
+            <ul>
+                <li>
+                    <div class="site">
+                        <h3>Fake ENT</h3>
+                        <img src="étoile-logo.gif" class="logo-etoile" alt="logo-etoile">
+                    </div>
+                    <p class="lien" id="lien-ENT"><u>https://github.com/Alpha604/Fake-ENT</u></p>
+                    <p>Un petit site que j'ai codé en HTML, CSS, JavaScript qui reprend l'ENT du collège, le plus représentatif possible en reproduisant la même interface de connexion et d'accueil</p>
+                </li>
+                <li>
+                    <div class="site">
+                        <h3>Wiki Padia</h3>
+                        <img src="étoile-logo.gif" class="logo-etoile" alt="logo-etoile">
+                        <img src="étoile-logo.gif" class="logo-etoile" alt="logo-etoile">
+                    </div>
+                    <p class="lien" id="lien-Wiki"><u>https://github.com/Alpha604/Wiki-Padia</u></p>
+                    <p>Le site que vous êtes en train de consulter s'appelle "Wiki-Padia", un site qui permet de suivre l'actu ou de d'apprendre a coder et creer sa propre page web</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="page3" style="display:none;">
+        <h2>Page 3</h2>
+        <p>Contenu de la page 3.</p>
+    </section>
+    <section id="page4" style="display: none;">
+        <h2>Cours de Developpemment</h2>
+        <div class="app-code">
+            <p>Apprendre a coder</p>
+            <img src="étoile-logo.gif" class="logo-etoile" alt="etoile">
+            <img src="étoile-logo.gif" class="logo-etoile" alt="etoile">
+            <img src="étoile-logo.gif" class="logo-etoile" alt="etoile">
+        </div>
+        <div class="languages">
+            <button class="languages-btn-html">
+                <img src="html-logo.png" alt="html-logo">
+                <p class="html-txt" style="display: flex; justify-content: center; align-items: center;">Html</p>
+            </button>
+            <button class="languages-btn-css">
+                <img src="css-logo.png" alt="css-logo">
+                <p class="css-txt" style="display: flex; justify-content: center; align-items: center;">Css</p>
+            </button>
+            <button class="languages-btn-js">
+                <img src="Js-logo.png" alt="js-logo">
+                <p class="js-txt" style="display: flex; justify-content: center; align-items: center;">JavaScript</p>
+            </button>
+        </div>
+        <img src="étoile-logo.gif" class="logo-etoile" alt="etoile">
+        <img src="étoile-logo.gif" class="logo-etoile" alt="etoile">
+        <div class="languages">
+            <button class="languages-btn-js">
+                <img src="python-logo.png" alt="python-logo">
+                <p class="py-txt" style="display: flex; justify-content: center; align-items: center;">Python</p>
+            </button>
+        </div>
+    </section>
+    <section id="page5" style="display: none;">
+        <h2>💻 Espace Developpeur</h2>
+    </section>
+    <script src="script.js"></script>
+    <script src="lien.js"></script>
+</body>
+<footer>
+    <p>&copy; 2025 Roméo LEONARD. Tous droits réservés.</p>
+</footer>
+</html>
