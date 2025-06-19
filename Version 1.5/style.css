@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+section {
+    padding: 20px;
+}
+
+.btn-nav {
+    background-color: #4CAF50; /* Couleur de fond verte */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none; /* Pas de bordure */
+    color: white; /* Texte en blanc */
+    padding: 7px 10px; /* Espacement intérieur */
+    text-align: center; /* Alignement du texte */
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block;
+    font-size: 16px; /* Taille de la police */
+    margin: 4px 2px;
+    cursor: pointer; /* Curseur en forme de main au survol */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre portée */
+    transition-duration: 0.4s; /* Durée de la transition */
+}
+
+.btn-nav:hover:hover {
+    background-color: #05770a; /* Couleur de fond au survol */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Ombre portée au survol */
+}
+
+.lien {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.languages-btn-html,
+.languages-btn-css,
+.languages-btn-js,
+.languages-btn-py {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+.languages-btn-html:hover,
+.languages-btn-css:hover,
+.languages-btn-js:hover,
+.languages-btn-py:hover {
+    cursor: pointer;
+}
+
+.languages-btn-html img,
+.languages-btn-css img,
+.languages-btn-js img,
+.languages-btn-py {
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.html-txt,
+.css-txt,
+.js-txt,
+.py-txt {
+    margin-bottom: 0;
+}
+
+.app-code {
+
+    align-items: center;
+}
+
+.logo-etoile {
+    width: 25px;
+    height: 25px;
+}
+
+.site {
+    display: flex;
+    align-items: center;
+}
+
+.copy {
+    margin-left: 20px;
+}
