@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Padia | Actualités</title>
+    <link rel="icon" type="image/png" href="earth-transparent-logo-1-removebg-preview.png">
+    <link rel="stylesheet" href="style-actualite.css">
+</head>
+<body>
+    <header>
+        <h1>Wiki Padia | Actualités</h1>
+        <p class="desc">Votre page d'actus</p>
+    </header>
+    <div class="btn">
+        <button class="btn-nav" id="btn-nav" style="display: block;">Catégories</button>
+        <button class="btn-nav" id="btn-wiki" style="display: block;">Wiki-Padia</button>
+        <button class="btn-nav" id="btn-creat" style="display: block;">Creer une page Wiki-Padia</button>
+    </div>
+    <nav class="nav" id="nav" style="display: block;">
+        <a href="#accueil">Accueil</a>
+        <a href="#page1">Toute l'Actualités</a>
+        <a href="#page2">Autre(s)</a>
+    </nav>
+    <section id="accueil">
+        <h2>Actualités</h2>
+        <p>Bienvenue sur la page actu de Wiki Padia, une source d'information gratuite en ligne et open source, pour :</p>
+        <ul>
+            <p>Consulter les actus :</p>
+            <li>🧠 Developpemment (Jeu, site web, avancés des projets)</li>
+            <li>🪖 Militaires</li>
+            <li>💰 Economiques</li>
+            <p>Et bien plus ...</p>
+        </ul>
+        <p>Découvrir 👉 <u>Voir les Catégories</u></p>
+        <br>
+        <h1>A la "Une" :</h1>
+        <div class="a-la-une">
+            <ul class="li-une">
+                <li class="premier"><h3 class="number">1</h3><h3>Service militaire</h3></li>
+                <li class="second"><h3>Bientôt</h3></li>
+                <li class="troisieme"><h3>Bientôt</h3></li>
+            </ul>
+        </div>
+    </section>
+    <section id="page1" style="display:none;">
+        <h2>Toutes les Actualités</h2>
+        <p>🛠️En cours de mise à jour</p>
+        <div class="container">
+            <div class="box" id="actu1">
+                <div class="box-header">
+                    <span class="category">Militaire</span>
+                    <span class="number">Numéro 1</span>
+                </div>
+                <h2>Service Militaire</h2>
+                <p class="texte">Le service militaire, souvent perçu comme une période de transition entre la jeunesse et l'âge adulte...</p>
+                <div class="plus" id="actu1">Lire plus 👉</div>
+            </div>
+        </div>
+
+        <div class="sidebar" id="sidebar1">
+            <button class="close" id="fermerBtn">✖</button>
+            <h2></h2>
+            <h2>Service Militaire</h2>
+            <p>Le Service National Universel (SNU) est une initiative française visant à favoriser l'engagement citoyen et la cohésion sociale parmi les jeunes. Lancé en 2019, ce programme s'adresse aux adolescents âgés de 15 à 17 ans et se déroule en deux phases principales.</p>
+
+            <h2>Séjour de Cohésion</h2>
+            <p>La première phase est un séjour de cohésion de deux semaines, généralement organisé dans un autre département que celui de résidence du jeune. Pendant ce séjour, les participants prennent part à diverses activités visant à renforcer les valeurs républicaines, la culture de l'engagement et la découverte des services publics. Les activités incluent des ateliers sur la laïcité, la citoyenneté, la sécurité, ainsi que des activités sportives et culturelles.</p>
+
+            <h2>Mission d'Intérêt Général</h2>
+            <p>La deuxième phase consiste en une mission d'intérêt général (MIG) de deux semaines, qui peut être effectuée dans divers domaines tels que la défense, l'environnement, la citoyenneté ou le soutien aux personnes vulnérables. Cette mission permet aux jeunes de s'engager activement dans la société et de développer un sens des responsabilités.</p>
+
+            <h2>Objectifs</h2>
+            <p>Le SNU vise à créer un sentiment d'appartenance à la communauté nationale, à promouvoir la mixité sociale et territoriale, et à encourager les jeunes à devenir des citoyens actifs et responsables.</p>
+        </div>
+    </section>
+    <section id="page2" style="display: none;">
+        <h2>Autres Actualités :</h2>
+        <p>🛠️En cours de mise à jour</p>
+    </section>
+    <script src="script-actualite.js" defer></script>
+    <script src="script-actualite-side.js" defer></script>
+</body>
+<footer>
+    <p class="copy">&copy; 2025 Roméo LEONARD. Tous droits réservés.</p>
+</footer>
+</html>

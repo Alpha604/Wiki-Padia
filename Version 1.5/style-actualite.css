@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+section {
+    padding: 20px;
+}
+
+.btn-nav {
+    background-color: #4CAF50; /* Couleur de fond verte */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none; /* Pas de bordure */
+    color: white; /* Texte en blanc */
+    padding: 7px 10px; /* Espacement intérieur */
+    text-align: center; /* Alignement du texte */
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block;
+    font-size: 16px; /* Taille de la police */
+    margin: 4px 2px;
+    cursor: pointer; /* Curseur en forme de main au survol */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre portée */
+    transition-duration: 0.4s; /* Durée de la transition */
+}
+
+.btn-nav:hover:hover {
+    background-color: #05770a; /* Couleur de fond au survol */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Ombre portée au survol */
+}
+
+.lien {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.languages-btn-html,
+.languages-btn-css,
+.languages-btn-js,
+.languages-btn-py {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+.languages-btn-html:hover,
+.languages-btn-css:hover,
+.languages-btn-js:hover,
+.languages-btn-py:hover {
+    cursor: pointer;
+}
+
+.languages-btn-html img,
+.languages-btn-css img,
+.languages-btn-js img,
+.languages-btn-py {
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.html-txt,
+.css-txt,
+.js-txt,
+.py-txt {
+    margin-bottom: 0;
+}
+
+.app-code {
+
+    align-items: center;
+}
+
+.logo-etoile {
+    width: 25px;
+    height: 25px;
+}
+
+.site {
+    display: flex;
+    align-items: center;
+}
+
+.copy {
+    margin-left: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+}
+
+
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.box {
+  flex: 1 1 calc(33.333% - 40px);
+  min-width: 250px;
+  max-width: 300px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.box:active {
+    transform: translateY(3px);
+}
+
+.box-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.category {
+  text-align: left;
+}
+
+.number {
+  text-align: right;
+}
+
+.box h2 {
+  margin: 0 0 10px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.box p {
+  color: #666;
+  font-size: 1em;
+}
+
+.texte {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* nombre de lignes visibles */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.li-une {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.li-une li {
+    position: relative;
+    padding: 15px 15px 15px 50px; /* espace à gauche pour les étoiles */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Style étoile */
+.li-une .premier::before {
+    content: "⭐⭐⭐";
+
+}
+
+.li-une .second::before {
+    content: "⭐⭐";
+}
+
+.li-une .troisieme::before {
+    content: "⭐";
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%; /* cachée au début */
+    width: 900px;
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    transition: right 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    right: 0; /* visible quand .open est ajoutée */
+}
+
+.close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
