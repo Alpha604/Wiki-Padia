@@ -14,7 +14,7 @@ WikiPadia est un projet visant à créer une encyclopédie en ligne où les util
 - **Collaboration en temps réel** : Travaillez ensemble sur les articles en temps réel.
 - **Catégorisation et balisage** : Organisez les articles avec des catégories et des balises pour une meilleure navigation.
 
-## Installation (bientôt)
+## Installation (Non fonctionnel)
 
 Pour installer et exécuter ce projet localement, suivez ces étapes :
 
