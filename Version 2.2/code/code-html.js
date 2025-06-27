@@ -10,12 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 })
 
-
-// Creer bouton
-document.getElementById('btn-creat').addEventListener('click', function () {
-    window.location.href = '../creer.html';
-})
-
 // Wiki bouton
 document.getElementById('btn-wiki').addEventListener('click', function () {
     window.location.href = '../accueil.html'
