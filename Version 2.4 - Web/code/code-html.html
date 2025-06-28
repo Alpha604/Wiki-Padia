@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Padia | HTML</title>
+    <link rel="icon" type="image/png" href="../icon/html-logo.png">
+    <link rel="stylesheet" href="code-html.css">
+</head>
+<body>
+    <header>
+        <h1>Wiki Padia | HTML</h1>
+        <p class="desc">Votre page d'actus</p>
+    </header>
+    <div class="btn">
+        <button class="btn-nav" id="btn-nav" style="display: block;">Catégories</button>
+        <button class="btn-nav" id="btn-wiki" style="display: block;">Wiki-Padia</button>
+    </div>
+    <nav class="nav" id="nav" style="display: block;">
+        <a href="#accueil">Accueil</a>
+        <a href="#page1">Tout les cours</a>
+        <a href="#page2">Chapitre 1</a>
+        <a href="#page3">ℹ️AIDES</a>
+        <a href="#page4">Espace DEV</a>
+    </nav>
+    <section id="accueil">
+        <h2>Apprendre le Html</h2>
+        <p>Bienvenue sur section d'apprentisage du code HTML sur ce site vous pourais apprendre les chapitres suivants :</p>
+        <ul>
+            <li>Chapitre 1</li>
+            <p>🪛 A la decouverte du HTML de base</p>
+            <li>Chapitre 2</li>
+            <p>⚙️ Les differentes balises</p>
+            <li>Chapitre 3</li>
+            <p>Bientôt ...</p>
+        </ul>
+        <p>Découvrir 👉 <u>Voir les Catégories</u></p>
+    </section>
+    <section id="page1" style="display:none;">
+        <h2>Toutes les cours HTML</h2>
+        <p>🛠️Actuellemment en developpemment</p>
+        <div class="actu1">
+            <div class="container">
+                <div class="box" id="actu1">
+                    <span class="badge-new-style">NEW</span> <!-- Le badge -->
+                    <span class="badge-dificult-style">⭐</span> <!-- Le badge -->
+                    <span class="badge-finish-style">✅</span> <!-- Le badge de finish -->
+                    <div class="box-header">
+                        <span class="cate">Chapitre n° 1</span>
+                        <span class="number">HTML 1</span>
+                    </div>
+                    <p class="date">23/06/2025</p>
+                    <h2>Découvrir le HTML</h2>
+                    <p class="texte">📖 Introduction :  Le HTML (HyperText Markup Language) est le langage de base des pages web.<br>Il sert à structurer les contenus : titres, paragraphes, images, liens...</p>
+                    <div class="plus" data-sidebar="sidebar1">Lire plus 👉</div>
+                </div>
+            </div>
+
+            <div class="sidebar" id="sidebar1">
+                <button class="close">✖</button>
+                <h2>📖 Introduction :</h2>
+                <p>Le HTML (HyperText Markup Language) est le langage de base des pages web. <br>Il sert à structurer les contenus : titres, paragraphes, images, liens...</p>
+                <h3>Exemple de structure HTML de base</h3>
+                <p>🔍 Survole moi 👇</p>
+                <img src="../captures/html-capture/capture-1.png" class="img-capture" alt="Description de l'image">
+                <h2>🧠 Explication rapide :</h2>
+                <ul>
+                    <li><strong>&lt;!DOCTYPE html&gt;</strong>: indique que c’est une page HTML5</li>
+                    <li><strong>&lt;html&gt;</strong>: tout le contenu HTML est à l’intérieur</li>
+                    <li><strong>&lt;head&gt;</strong>: contient des infos invisibles (titre, encodage...)</li>
+                    <li><strong>&lt;title&gt;</strong>: le nom affiché dans l’onglet du navigateur</li>
+                    <li><strong>&lt;body&gt;</strong>: le contenu visible de la page</li>
+                    <li><strong>&lt;h1&gt;</strong>: un titre principal</li>
+                    <li><strong>&lt;p&gt;</strong>: un paragraphe</li>
+                </ul>
+                <!-- contenu complet -->
+            </div>
+        </div>
+        <div class="actu2">
+            <div class="container">
+                <div class="box" id="actu2">
+                    <span class="badge-new-style">NEW</span> <!-- Le badge de nouveauté -->
+                    <span class="badge-dificult-style">⭐</span> <!-- Le badge de dificulté -->
+                    <span class="badge-build-style">🛠️</span> <!-- Le badge de construction -->
+                    <div class="box-header">
+                        <span class="cate">Chapitre n° 1</span>
+                        <span class="number">HTML 2</span>
+                    </div>
+                    <p class="date">24/06/2025</p>
+                    <h2>Structurer une page web en HTML</h2>
+                    <p class="texte">📖 Introduction :  Structurer une page web en Html est une partie crusial dans la creation de page web.<br>Tout les sites sont codé avec plus ou moins la meme structure de code HTML...</p>
+                    <div class="plus" data-sidebar="sidebar2">Lire plus 👉</div>
+                </div>
+            </div>
+
+            <div class="sidebar" id="sidebar2">
+                <button class="close">✖</button>
+                <h2>📖 Introduction :</h2>
+                <p>Structurer une page web en Html est une partie crusial dans la creation de page web.<br>Tout les sites sont codé avec plus ou moins la meme structure de code HTML...</p>
+                <!-- contenu complet -->
+            </div>
+        </div>
+    </section>
+    <section id="page2" style="display: none;">
+        <h2>Chapitre 1 :</h2>
+        <p>🛠️En cours de mise à jour</p>
+        <div class="actu1">
+            <div class="container">
+                <div class="box" id="actu1">
+                    <span class="badge-new-style">NEW</span> <!-- Le badge -->
+                    <span class="badge-dificult-style">⭐</span> <!-- Le badge -->
+                    <span class="badge-finish-style">✅</span> <!-- Le badge de finish -->
+                    <div class="box-header">
+                        <span class="cate">Chapitre n° 1</span>
+                        <span class="number">HTML 1</span>
+                    </div>
+                    <p class="date">23/06/2025</p>
+                    <h2>Découvrir le HTML</h2>
+                    <p class="texte">📖 Introduction :  Le HTML (HyperText Markup Language) est le langage de base des pages web.<br>Il sert à structurer les contenus : titres, paragraphes, images, liens...</p>
+                    <div class="plus" data-sidebar="sidebar1-1">Lire plus 👉</div>
+                </div>
+            </div>
+
+            <div class="sidebar" id="sidebar1-1">
+                <button class="close">✖</button>
+                <h2>📖 Introduction :</h2>
+                <p>Le HTML (HyperText Markup Language) est le langage de base des pages web. <br>Il sert à structurer les contenus : titres, paragraphes, images, liens...</p>
+                <h3>Exemple de structure HTML de base</h3>
+                <p>🔍 Survole moi 👇</p>
+                <img src="../captures/html-capture/capture-1.png" class="img-capture" alt="Description de l'image">
+                <h2>🧠 Explication rapide :</h2>
+                <ul>
+                    <li><strong>&lt;!DOCTYPE html&gt;</strong>: indique que c’est une page HTML5</li>
+                    <li><strong>&lt;html&gt;</strong>: tout le contenu HTML est à l’intérieur</li>
+                    <li><strong>&lt;head&gt;</strong>: contient des infos invisibles (titre, encodage...)</li>
+                    <li><strong>&lt;title&gt;</strong>: le nom affiché dans l’onglet du navigateur</li>
+                    <li><strong>&lt;body&gt;</strong>: le contenu visible de la page</li>
+                    <li><strong>&lt;h1&gt;</strong>: un titre principal</li>
+                    <li><strong>&lt;p&gt;</strong>: un paragraphe</li>
+                </ul>
+                <!-- contenu complet -->
+            </div>
+        </div>
+        <div class="actu2">
+            <div class="container">
+                <div class="box" id="actu2">
+                    <span class="badge-new-style">NEW</span> <!-- Le badge de nouveauté -->
+                    <span class="badge-dificult-style">⭐</span> <!-- Le badge de dificulté -->
+                    <span class="badge-build-style">🛠️</span> <!-- Le badge de construction -->
+                    <div class="box-header">
+                        <span class="cate">Chapitre n° 1</span>
+                        <span class="number">HTML 2</span>
+                    </div>
+                    <p class="date">23/06/2025</p>
+                    <h2>Structurer une page web en HTML</h2>
+                    <p class="texte">📖 Introduction :  Structurer une page web en Html est une partie crusial dans la creation de page web.<br>Tout les sites sont codé avec plus ou moins la meme structure de code HTML...</p>
+                    <div class="plus" data-sidebar="sidebar2-1">Lire plus 👉</div>
+                </div>
+            </div>
+
+            <div class="sidebar" id="sidebar2-1">
+                <button class="close">✖</button>
+                <h2>📖 Introduction :</h2>
+                <p>Structurer une page web en Html est une partie crusial dans la creation de page web.<br>Tout les sites sont codé avec plus ou moins la meme structure de code HTML...</p>
+                <!-- contenu complet -->
+            </div>
+        </div>
+    </section>
+    <section id="page3" style="display:none;">
+        <h1>ℹ️ AIDES :</h1>
+        <div class="contact">
+            <h2>☎️ Contacts :</h2>
+            <ul>
+                <li>Téléphone : 🚫Not Allowed</li>
+                <li>Gmail : romeo.leonard56@gmail.com</li>
+                <li>GitHub : <u class="GitHub" id="GitHub">Alpha604</u></li>
+            </ul>
+        </div>
+        <div class="astuce">
+            <h2>💡 Astuces :</h2>
+            <ul>
+                <li>"🔍 Survole moi 👇"</li>
+                <p>Survole l'image pour s'agrandire</p>
+                <li>"⭐"</li>
+                <p>Son nombre designe le niveau de dificulté de la leçon (sauf actu)</p>
+                <li>"🛠️"</li>
+                <p>Il indique que l'actu, la leçon n'est pas terminée, en cours de préparation, modifications</p>
+                <li>"✅"</li>
+                <p>Il indique que l'actu a été vérifié par un modérateur interne</p>
+                <li>"⚠️"</li>
+                <p>Il indique que l'actu a rencontré un problème</p>
+            </ul>
+        </div>
+    </section>
+    <section id="page4" style="display: none;">
+        <h2>💻 Espace Developpeur</h2>
+        <br>
+        <h3>🚫<u>Vous devez être le Développeur de ce site ou avoir l'autorisation pour pouvoir accéder à cette fonction</u> !</h3>
+        <br>
+        <h3>Liste des Modérateur(s) / Developpeur(s) :</h3>
+        <ul>
+            <li>Administrateur(s) :</li>
+            <br>
+            <ul class="li-adm">
+                <li>Roméo LEONARD</li>
+            </ul>
+            <br>
+            <li>Developpeur(s) :</li>
+            <br>
+            <ul class="li-dev">
+                <li>Roméo LEONARD</li>
+            </ul>
+            <br>
+            <li>Modérateur(s)</li>
+            <br>
+            <ul class="li-modo">
+                <li>Roméo LEONARD</li>
+            </ul>
+            <br>
+            <li>Redacteur(s)</li>
+            <br>
+            <ul class="li-redac">
+                <li>Roméo LEONARD</li>
+            </ul>
+        </ul>
+    </section>
+    <script src="code-html.js" defer></script>
+    <script src="code-html-2.js" defer></script>
+</body>
+<footer>
+    <p class="copy">&copy; 2025 Roméo LEONARD. Tous droits réservés.</p>
+</footer>
+</html>
