@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Padia</title>
+    <link rel="icon" type="image/png" href="icon/earth-transparent-logo-1-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Wiki Padia</h1>
+        <p class="desc">Recherche simple et facile</p>
+    </header>
+    <div class="btn">
+        <button class="btn-nav" id="btn-nav" style="display: block;">Catégories</button>
+        <button class="btn-nav" id="btn-actu" style="display: block;">Actualités</button>
+        <button class="btn-nav" id="btn-video" style="display: block;">Local Vidéo</button>
+        <button class="btn-nav" id="btn-creat" style="display: none;">Creer une page Wiki-Padia</button>
+    </div>
+    <nav class="nav" id="nav" style="display: block;">
+        <a href="#accueil">Accueil</a>
+        <a href="#page1">Actualités (Wiki)</a>
+        <a href="#page4">Apprendre a coder</a>
+        <a href="#page2">Site(s)</a>
+        <a href="#page3">Infos</a>
+        
+        <a href="#page5">Espace Dev</a>
+        <a href="#page6">ℹ️AIDES</a>
+    </nav>
+    <section id="accueil">
+        <h2>👋 Bienvenue !</h2>
+        <h3>Bienvenue sur Wiki Padia, <br> un site en ligne développé par Roméo en Html, Css et JavaScript qui vous permet d':</h3>
+        <ul>
+            <li>🧠 Apprendre a coder</li>
+            <li>ℹ️ S'informer</li>
+            <li>🌐 Developper son propre site web</li>
+            <p>Et bien plus ...</p>
+        </ul>
+        <p>Découvrir 👉 <u>Voir les Catégories</u></p>
+        <br>
+        <p>Statu du site : <div style="color: red;">En cour de developpemment</div></p>
+    </section>
+    <section id="page1" style="display:none;">
+        <h2>Actualités</h2>
+        <p>Suivez les pages infos fait par d'autres utilisateurs :</p>
+        <div class="actu">
+        <button class="continue-application" id="continue-application">
+            <div>
+                <div class="pencil"></div>
+                <div class="folder">
+                    <div class="top">
+                        <svg viewBox="0 0 24 27">
+                            <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
+                        </svg>
+                    </div>
+                    <div class="paper"></div>
+                </div>
+            </div>
+            Voir l'Actualité
+        </button>
+        </div>
+    </section>
+    <section id="page2" style="display:none;">
+        <h2>Les sites que j'ai codés</h2>
+        <p>J'adore coder des petits projets comme ce site, je vais vous en présenter quelques-uns ...</p>
+        <div class="site">
+            <ul>
+                <li>
+                    <div class="site">
+                        <h3>Fake ENT</h3>
+                        <img src="icon/étoile-logo.gif" class="logo-etoile" alt="logo-etoile">
+                    </div>
+                    <div class="site">
+                        <h3>Statu :</h3>
+                        <h4 style="color: red;">En cours de Developpemment</h4>
+                    </div>
+                    <p class="lien" id="lien-ENT"><u>https://github.com/Alpha604/Fake-ENT</u></p>
+                    <p>Un petit site que j'ai codé en HTML, CSS, JavaScript qui reprend l'ENT du collège, le plus représentatif possible en reproduisant la même interface de connexion et d'accueil</p>
+                </li>
+                <li>
+                    <div class="site">
+                        <h3>Wiki Padia</h3>
+                        <img src="icon/étoile-logo.gif" class="logo-etoile" alt="logo-etoile">
+                        <img src="icon/étoile-logo.gif" class="logo-etoile" alt="logo-etoile">
+                    </div>
+                    <div class="site">
+                        <h3>Statu :</h3>
+                        <h4 style="color: red;">En cours de Developpemment</h4>
+                    </div>
+                    <p class="lien" id="lien-Wiki"><u>https://github.com/Alpha604/Wiki-Padia</u></p>
+                    <p>Le site que vous êtes en train de consulter s'appelle "Wiki-Padia", un site qui permet de suivre l'actu ou de d'apprendre a coder et creer sa propre page web</p>
+                </li>
+                <li>
+                    <div class="site">
+                        <h3>Film search</h3>
+                        <img src="icon/étoile-logo.gif" class="logo-etoile" alt="logo-etoile">
+                        <img src="icon/étoile-logo.gif" class="logo-etoile" alt="logo-etoile">
+                    </div>
+                    <div class="site">
+                        <h3>Statu :</h3>
+                        <h4 style="color: green;">Fini</h4>
+                    </div>
+                    <p class="lien" id="lien-imovie">🚫<u>Non Disponible</u></p>
+                    <p>Avec l'API d' IMovie, ce site vous permet de rechercher des films et series gratuitemmet et rapidemment avec une évaluation, description, photo et titre du film/serie</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="page3" style="display:none;">
+        <ul>
+            <li>
+                <h2>Infos Developpeur</h2>
+                <p><strong>Je m'appelle Roméo 👨‍💻,<br><br> je suis en classe de 4ème, et je me suis lancé dans un projet personnel : créer mon propre Wiki-Pedia (fiche infos collaboratifs) en Code : Html, JavaScript, Css. Seul. Ce n’est pas pour remplacer l’officiel, mais plutôt<u> pour apprendre mieux à coder</u>, imaginer une interface plus moderne, et proposer une version à ma façon. Mon "Wiki-Padia" permettrait de consulter les fiches, en créer, apprendre a coder, avec un design plus clair et agréable.<br><br><u> Il est encore en phase de développement mais vous pouvez suivre l'avancer du projet en cliquant sur le lien juste en dessous pour accéder à mon GitHub que je met asser régulièrement à jour 💾</u><br><br><u> C’est un défi que je me suis donné pour progresser en informatique et développer ma créativité de développement.</u> <br><br> Merci !!</strong></p><br><br>
+            </li>
+            <li>
+                <h2>Infos site</h2>
+                <p>Version site : 1.2.3</p>
+            </li>
+            <br>
+            <li>
+                <h2>Statu du site</h2>
+                <p style="color: red;"><u>En cours de developpemment</u></p>
+            </li>
+        </ul>
+    </section>
+    <section id="page4" style="display: none;">
+        <div class="center">
+            <h2>Cours de Developpemment</h2>
+            <div class="app-code">
+                <p>Apprendre a coder votre languages favori</p>
+                <div class="etoiles">
+                    <img src="icon/étoile-logo.gif" class="logo-etoile" alt="etoile" style="width: 30px;">
+                    <img src="icon/étoile-logo.gif" class="logo-etoile" alt="etoile" style="width: 30px;">
+                    <img src="icon/étoile-logo.gif" class="logo-etoile" alt="etoile" style="width: 30px;">
+                </div>
+            </div>
+            <div class="languages">
+                <div class="language-item" id="html-btn">
+                    <img src="icon/html-logo.png" alt="html">
+                    <p>HTML</p>
+                </div>
+                <div class="language-item" id="css-btn">
+                    <img src="icon/css-logo.png" alt="css">
+                    <p>CSS</p>
+                </div>
+                <div class="language-item" id="js-btn">
+                    <img src="icon/Js-logo.png" alt="js">
+                    <p>JavaScript</p>
+                </div>
+            </div>
+            <div class="etoiles">
+                <img src="icon/étoile-logo.gif" class="logo-etoile" alt="etoile" style="width: 30px;">
+                <img src="icon/étoile-logo.gif" class="logo-etoile" alt="etoile" style="width: 30px;">
+                <img src="icon/étoile-logo.gif" class="logo-etoile" alt="etoile" style="width: 30px;">
+            </div>
+            <div class="languages">
+                <div class="language-item">
+                    <img src="icon/python-logo.png" alt="python">
+                    <p>Python</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="no-cours">
+            <h2 class="no-cours-title">🎉 Nouveaux cours 🎉</h2>
+            <h4>Html :</h4>
+            <ul class="uhtml">
+                <ul>
+                    <p>Chapitre 1</p>
+                    <li>Découvrir le HTML</li>
+                    <li>Structure de base d’une page HTML</li>
+                    <li>Ajouter des titres</li>
+                </ul>
+            </ul>
+            <h4>JavaScript :</h4>
+            <ul class="ujs">
+                <li>Rien pour le momment</li>
+            </ul>
+            <h4>Css :</h4>
+            <ul class="ucss">
+                <li>Rien pour le momment</li>
+            </ul>
+        </div>
+    </section>
+    <section id="page5" style="display: none;">
+        <h2>💻 Espace Developpeur</h2>
+        <h3><p class="non">❌</p><u>Vous devez être le Développeur de ce site ou avoir l'autorisation pour pouvoir accéder à cette fonction</u> !</h3>
+        <h3>Liste des Modérateur(s) / Developpeur(s) :</h3>
+        <ul>
+            <li>Administrateur(s) :</li>
+            <br>
+            <ul class="li-adm">
+                <li>Roméo LEONARD</li>
+            </ul>
+            <br>
+            <li>Developpeur(s) :</li>
+            <br>
+            <ul class="li-dev">
+                <li>Roméo LEONARD</li>
+            </ul>
+            <br>
+            <li>Modérateur(s)</li>
+            <br>
+            <ul class="li-modo">
+                <li>Roméo LEONARD</li>
+            </ul>
+            <br>
+            <li>Redacteur(s)</li>
+            <br>
+            <ul class="li-redac">
+                <li>Roméo LEONARD</li>
+            </ul>
+        </ul>
+    </section>
+    <section id="page6" style="display:none;">
+        <h1>ℹ️ AIDES :</h1>
+        <div class="contact">
+            <h2>☎️ Contacts :</h2>
+            <ul>
+                <li>Téléphone : 🚫Not Allowed</li>
+                <li>Gmail : romeo.leonard56@gmail.com</li>
+                <li>GitHub : <u class="GitHub" id="GitHub">Alpha604</u></li>
+            </ul>
+        </div>
+        <div class="astuce">
+            <h2>💡 Astuces :</h2>
+            <ul>
+                <li>"🔍 Survole moi 👇"</li>
+                <p>Survole l'image pour s'agrandire</p>
+                <li>"⭐"</li>
+                <p>Son nombre designe le niveau de dificulté de la leçon (sauf actu)</p>
+                <li>"🛠️"</li>
+                <p>Il indique que l'actu, la leçon n'est pas terminée, en cours de préparation, modifications</p>
+                <li>"✅"</li>
+                <p>Il indique que l'actu a été vérifié par un modérateur interne</p>
+                <li>"⚠️"</li>
+                <p>Il indique que l'actu a rencontré un problème</p>
+            </ul>
+        </div>
+    </section>
+    <script src="script.js" defer></script>
+    <script src="lien.js" defer></script>
+</body>
+<footer>
+    <p class="copy">&copy; 2025 Roméo LEONARD. Tous droits réservés.</p>
+</footer>
+</html>
