@@ -21,3 +21,36 @@ Pour installer et exécuter ce projet localement, suivez ces étapes :
 1. Clonez le dépôt sur votre machine locale :
    ```bash
    git clone https://github.com/Alpha604/Wiki-padia.git
+
+## Voir le site en ligne
+
+Pour voir le site en ligne suivez ces étapes :
+
+1. Taper dans votre navigateur :
+   ```bash
+   https://alpha604.github.io/Web-Wiki-Padia.github.io/Version%202.5%20-%20Web/accueil.html
+
+2. Changer la version du site :
+
+   Exemple :
+
+Version 2.5 :
+   ```bash
+   https://alpha604.github.io/Web-Wiki-Padia.github.io/Version%202.5%20-%20Web/accueil.html
+   ```
+
+Version 2.6 :
+   ```bash
+   https://alpha604.github.io/Web-Wiki-Padia.github.io/Version%202.6%20-%20Web/accueil.html
+   ```
+
+Le nom de la version se trouve dans : 
+   
+   ```bash
+   /Version%202.6%20-%20Web
+   ```
+   /Version%202.6%20-%20Web = /Version 2.6- Web
+   
+   /Version%202.9%20-%20Web = /Version 2.9- Web
+   
+   /Version%203.5%20-%20Web = /Version 3.5- Web
