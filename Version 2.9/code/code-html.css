@@ -1,0 +1,531 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+section {
+    padding: 20px;
+}
+
+.btn-nav {
+    background-color: #4CAF50; /* Couleur de fond verte */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none; /* Pas de bordure */
+    color: white; /* Texte en blanc */
+    padding: 7px 10px; /* Espacement intérieur */
+    text-align: center; /* Alignement du texte */
+    text-decoration: none; /* Pas de soulignement */
+    display: inline-block;
+    font-size: 16px; /* Taille de la police */
+    margin: 4px 2px;
+    cursor: pointer; /* Curseur en forme de main au survol */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre portée */
+    transition-duration: 0.4s; /* Durée de la transition */
+}
+
+.btn-nav:hover:hover {
+    background-color: #05770a; /* Couleur de fond au survol */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Ombre portée au survol */
+}
+
+.lien {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.languages-btn-html,
+.languages-btn-css,
+.languages-btn-js,
+.languages-btn-py {
+    border: none;
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+.languages-btn-html:hover,
+.languages-btn-css:hover,
+.languages-btn-js:hover,
+.languages-btn-py:hover {
+    cursor: pointer;
+}
+
+.languages-btn-html img,
+.languages-btn-css img,
+.languages-btn-js img,
+.languages-btn-py {
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.html-txt,
+.css-txt,
+.js-txt,
+.py-txt {
+    margin-bottom: 0;
+}
+
+.app-code {
+
+    align-items: center;
+}
+
+.logo-etoile {
+    width: 25px;
+    height: 25px;
+}
+
+.site {
+    display: flex;
+    align-items: center;
+}
+
+.copy {
+    margin-left: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+}
+
+
+/* BTN recherche */
+.textInputWrapper {
+  position: relative;
+  width: 180px;
+  margin: 12px 5px;
+  --accent-color: #a3e583;
+}
+
+.textInputWrapper:before {
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.textInputWrapper:before,
+.textInputWrapper:after {
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  pointer-events: none;
+  bottom: -1px;
+  z-index: 4;
+  width: 100%;
+}
+
+.textInputWrapper:focus-within:before {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.textInputWrapper:before {
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.textInputWrapper:focus-within:before {
+  border-bottom: 1px solid var(--accent-color);
+  transform: scaleX(1);
+}
+
+.textInputWrapper:focus-within:after {
+  border-bottom: 2px solid var(--accent-color);
+  transform: scaleX(1);
+}
+
+.textInputWrapper:after {
+  content: "";
+  transform: scaleX(0);
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  will-change: transform;
+  border-bottom: 2px solid var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
+.textInput::placeholder {
+  transition: opacity 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  opacity: 1;
+  user-select: none;
+  color: rgba(255, 255, 255, 0.582);
+}
+
+.textInputWrapper .textInput {
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: 0px 2px 5px rgb(35 35 35 / 30%);
+  max-height: 36px;
+  background-color: #252525;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 200ms;
+  transition-property: background-color;
+  color: #e8e8e8;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px;
+  width: 100%;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.textInputWrapper .textInput:focus,
+.textInputWrapper .textInput:active {
+  outline: none;
+}
+
+.textInputWrapper:focus-within .textInput,
+.textInputWrapper .textInput:focus,
+.textInputWrapper .textInput:active {
+  background-color: #353535;
+}
+
+.textInputWrapper:focus-within .textInput::placeholder {
+  opacity: 0;
+}
+
+/* BTn recherche fin */
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 20px;
+  justify-content: center;
+  width: 100%; /* Assurez-vous que le conteneur a une largeur définie */
+}
+
+.box {
+    flex: 1 1 calc(33.333% - 20px); /* Ajustez la largeur en fonction de l'espacement */
+    min-width: 250px;
+    position: relative; /* A voir */
+    padding-top: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.box:active {
+    transform: translateY(3px);
+}
+
+.box-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.category {
+  text-align: left;
+}
+
+.number {
+  text-align: right;
+}
+
+.box h2 {
+  margin: 0 0 10px;
+  font-size: 1.8em;
+  color: #333;
+}
+
+.box p {
+  color: #666;
+  font-size: 1em;
+}
+
+.texte {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* nombre de lignes visibles */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.li-une {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.li-une li {
+    position: relative;
+    padding: 15px 15px 15px 50px; /* espace à gauche pour les étoiles */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Style étoile */
+.li-une .premier::before {
+    content: "⭐⭐⭐";
+
+}
+
+.li-une .second::before {
+    content: "⭐⭐";
+}
+
+.li-une .troisieme::before {
+    content: "⭐";
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 900px;
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    transition: right 0.3s ease;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+.li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cate {
+    text-align: left;
+    color: rgb(250, 108, 108);
+}
+.number {
+    text-align: right;
+    color: #007bff;
+}
+
+.date {
+    text-align: left;
+}
+
+.plus {
+    background-color: #007bff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.close {
+    transition: all 0.5s;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.close:hover {
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: #ff475691;
+}
+
+.copy {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge-new-style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e50914; /* rouge vif */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    z-index: 10;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-left: 30px;
+}
+
+.badge-dificult-style {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #099fe574; /* Vert claire */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    z-index: 10;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-left: 100px;
+}
+
+.badge-build-style {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #faab00d3; /* Vert claire */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    z-index: 10;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-right: 30px;
+}
+
+.badge-finish-style {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #1dfa0077; /* Vert claire */
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 20px rgba(0, 255, 128, 0.425);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    z-index: 10;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-right: 30px;
+}
+
+.badge-bug-style {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fa08009f; /* Vert claire */
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 20px rgba(255, 0, 0, 0.356);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    z-index: 10;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-right: 30px;
+}
+
+.captures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 190px;
+}
+
+.img-capture {
+    transition: all 1s;
+    width: 200px;
+    height: auto;
+}
+
+.img-capture:hover {
+    width: 600px;
+    height: auto;
+    transition: all 1s;
+}
+
+.GitHub {
+    color: #007bff;
+    cursor: pointer;
+}
+
+.li-adm, .li-dev, .li-modo, .li-redac {
+    list-style-type: none; /* Supprime les puces par défaut */
+    padding-left: 0; /* Supprime le padding par défaut */
+}
+
+.li-adm li, .li-dev li, .li-modo li, .li-redac li{
+    position: relative;
+    padding-left: 2em; /* Ajoute un espace pour l'emoji */
+}
+
+.li-adm li::before {
+    content: "👑"; /* Emoji pour les administrateurs */
+    position: absolute;
+    left: 0;
+}
+
+.li-dev li::before {
+    content: "💻"; /* Emoji pour les développeurs */
+    position: absolute;
+    left: 0;
+}
+
+.li-modo li::before {
+    content: "🛡️"; /* Emoji pour les modérateurs */
+    position: absolute;
+    left: 0;
+}
+
+.li-redac li::before {
+    content: "✏️"; /* Emoji pour les rédacteurs */
+    position: absolute;
+    left: 0;
+}
+
+.blue {
+    color: #007bff;
+    display: inline-block;
+}
