@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Wiki-Padia | Poscast</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../icon/podcast-logo.png">
+    <link rel="stylesheet" href="style-podcast.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wiki Padia | Podcasts</h1>
+        <p class="desc">Ecoute de podcast gratuite en ligne</p>
+    </header>
+    <div class="btn">
+        <button class="btn-nav" id="btn-nav" style="display: block;">Catégories</button>
+        <button class="btn-nav" id="btn-wiki">Wiki-Padia</button>
+        <button class="btn-nav" id="btn-creat" style="display: none;">Creer une page Wiki-Padia</button>
+    </div>
+    <nav class="nav" id="nav" style="display: block;">
+        <a href="#accueil">Accueil</a>
+        <a href="#page1">Tout les Podcasts</a>
+        <a href="#page5">Espace Dev</a>
+        <a href="#page6">ℹ️AIDES</a>
+    </nav>
+    <section id="accueil">
+        <h2>👋 Bienvenue !</h2>
+        <h3>Bienvenue sur le Local video de Wiki-Padia, <br> Un branche du site "Wiki-Padia" qui vous permet de consulter des vidéos en ligne</h3>
+        <p>Découvrir 👉 <u>Voir les Catégories</u></p>
+        <br>
+        <p>Statu du site : <div style="color: red;">En cour de developpemment</div></p>
+    </section>
+    <section id="page1" style="display: none;">
+        <div class="player-container" id="p-1">
+            <span class="badge-new-style">NEW</span> <!-- Le badge -->
+            <audio class="audio" src="podcasts/brawl-stars-lose-slow.mp3"></audio>
+            <div class="infos">
+                <h2 class="name">Elle est ou ta chimie</h2>
+                <h2 class="number">Episode 1</h2>
+            </div>
+            <p style="margin: 0; color: antiquewhite;">Version Podcast</p>
+            <p class="date">30/06/2025</p>
+            <p class="artiste">Roméo LEONARD</p>
+            <div class="controls">
+                <button class="rewind" title="Reculer 5 secondes">⏪</button>
+                <button class="playPause" title="Lecture/Pause">▶️</button>
+                <button class="forward" title="Avancer 10 secondes">⏩</button>
+            </div>
+            <div class="progress-wrapper" title="Cliquer pour changer la position">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="time-display">00:00 / 00:00</div>
+        </div>
+
+        <div class="player-container" id="p-2">
+            <audio class="audio" src="podcasts\bloody mary (instrumental x dum dum, da-di-da) [full version] - lady gaga [edit audio].mp3"></audio>
+            <div class="infos">
+                <h2 class="name">Test Poscast n°2</h2>
+                <h2 class="number">Super</h2>
+            </div>
+            <p class="date">30/06/2025</p>
+            <div class="controls">
+                <button class="rewind" title="Reculer 10 secondes">⏪</button>
+                <button class="playPause" title="Lecture/Pause">▶️</button>
+                <button class="forward" title="Avancer 10 secondes">⏩</button>
+            </div>
+            <div class="progress-wrapper" title="Cliquer pour changer la position">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="time-display">00:00 / 00:00</div>
+        </div>
+    </section>
+<script>
+  function formatTime(seconds) {
+  const m = Math.floor(seconds / 60);
+  const s = Math.floor(seconds % 60);
+  return `${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+}
+
+document.querySelectorAll('.player-container').forEach(player => {
+  const audio = player.querySelector('.audio');
+  const playPauseBtn = player.querySelector('.playPause');
+  const rewindBtn = player.querySelector('.rewind');
+  const forwardBtn = player.querySelector('.forward');
+  const progressWrapper = player.querySelector('.progress-wrapper');
+  const progressBar = progressWrapper.querySelector('.progress-bar');
+  const timeDisplay = player.querySelector('.time-display');
+
+  playPauseBtn.addEventListener('click', () => {
+    if(audio.paused) {
+      audio.play();
+      playPauseBtn.textContent = '⏸️';
+    } else {
+      audio.pause();
+      playPauseBtn.textContent = '▶️';
+    }
+  });
+
+  rewindBtn.addEventListener('click', () => {
+    audio.currentTime = Math.max(0, audio.currentTime - 5);
+  });
+
+  forwardBtn.addEventListener('click', () => {
+    audio.currentTime = Math.min(audio.duration, audio.currentTime + 10);
+  });
+
+  audio.addEventListener('timeupdate', () => {
+    if (!audio.duration) return;
+    const percent = (audio.currentTime / audio.duration) * 100;
+    progressBar.style.width = `${percent}%`;
+    timeDisplay.textContent = `${formatTime(audio.currentTime)} / ${formatTime(audio.duration)}`;
+  });
+
+  progressWrapper.addEventListener('click', (e) => {
+    const rect = progressWrapper.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const newTime = (clickX / rect.width) * audio.duration;
+    audio.currentTime = newTime;
+  });
+});
+
+</script>
+</body>
+<footer>
+    <script src="script-podcast.js" defer></script>
+</footer>
+</html>
