@@ -1,0 +1,244 @@
+.btn-nav {
+  background-color: #4CAF50; /* Couleur de fond verte */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none; /* Pas de bordure */
+  color: white; /* Texte en blanc */
+  padding: 7px 10px; /* Espacement intérieur */
+  text-align: center; /* Alignement du texte */
+  text-decoration: none; /* Pas de soulignement */
+  display: inline-block;
+  font-size: 16px; /* Taille de la police */
+  margin: 20px 20px;
+  cursor: pointer; /* Curseur en forme de main au survol */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre portée */
+  transition-duration: 0.4s; /* Durée de la transition */
+}
+
+.btn-nav:hover:hover {
+  background-color: #05770a; /* Couleur de fond au survol */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Ombre portée au survol */
+}
+
+/* Code Fake ENT V 5.4 */
+*{
+  font-family: sans-serif;
+}
+html{
+  background-color: rgb(242,242,242);
+  height: auto;
+}
+body{
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255,255,255);
+  border-radius: 10px;
+  height: 500px;
+  width: 1050px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.titlehead{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partenaires{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text0{
+  margin-left: 25px;
+}
+.texte1{
+  margin-left: 25px;
+}
+.bouton-image1{
+  position: relative;
+  width: 45px;
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-top: 17px;
+}
+.bouton-image2{
+  position: relative;
+  width: 45px;
+  height: 45px;
+  padding-left: 35px;
+  padding-right: 30px;
+}
+.bouton-image3{
+  position: relative;
+  width: 45px;
+  height: 45px;
+  padding-left: 35px;
+  padding-right: 30px;
+}
+.eleve{
+  transition: all 1s;
+  background-color: rgb(67,107,168);
+  margin-right: 20px;
+  height: 100px;
+  width: 125px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: none;
+}
+.parent{
+  transition: all 1s;
+  margin-right: 20px;
+  background-color: rgb(67,107,168);
+  height: 100px;
+  width: 125px;
+  border-radius: 3px; 
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: none;
+}
+.personnel{
+  transition: all 1s;
+  font-size: 15px;
+  background-color: rgb(67,107,168);
+  height: 100px;
+  width: 125px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  border: none;
+}
+.bouton1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eleve:hover{
+  transition: all 0.9s;
+  background-color: rgb(15,68,150);
+  border-radius: 10px;
+  height: 100px;
+}
+.parent:hover{
+  cursor: not-allowed;
+  transition: all 0.9s;
+  background-color: rgb(15,68,150);
+  border-radius: 10px;
+  height: 100px;
+}
+.personnel:hover{
+  transition: all 0.9s;
+  background-color: rgb(15,68,150);
+  border-radius: 10px;
+  height: 100px;
+}
+.bienvenue{
+  margin-left: 25px;
+}
+.infos{
+  display: flex;
+  justify-content: center;
+}
+.ID{
+  transition: all 1s;
+  border-radius: 10px;
+  height: 30px;
+  width: 200px;
+}
+.ID:hover{
+  transition: all 1.6s;
+  border-radius: 15px;
+  background-color: #B5D7E8;
+}
+.MDP{
+  transition: all 1s;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  height: 30px;
+  width: 200px;
+}
+.MDP:hover{
+  transition: all 1.6s;
+  border-radius: 15px;
+  background-color: #B5D7E8;
+}
+.CDS{
+  transition: all 1s;
+  margin-right: 20px;
+  border-radius: 10px;
+  height: 30px;
+  width: 200px;
+}
+.CDS:hover{
+  transition: all 1.6s;
+  border-radius: 15px;
+  background-color: #B5D7E8;
+}
+.connecter{
+  border-radius: 10px;
+  transition: all 1s;
+  height: 30px;
+  cursor: pointer;
+  border: #272e31;
+}
+.connecter:hover{
+  transition: all 1.3s;
+  border-radius: 15px;
+  background-color: #129ADC;
+}
+.certif:hover{
+  transition: all 0.9s;
+  background-color: #81C784;
+  cursor: pointer;
+}
+.messageErreur{
+  margin-left: 25px;
+}
+.bug{
+  transition: all 1s;
+  margin-left: 25px;
+}
+.bug:hover{
+  transition: all 1s;
+  background-color: #B5D7E8;
+}
+.admaccess,
+.parentaccess,
+.eleveaccess{
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  border-radius: 5px;
+  cursor: not-allowed;
+  gap: 10px;
+  border: none;
+}
+.admaccess,
+.parentaccess,
+.eleveaccess:hover{
+  cursor: not-allowed;
+}
+.contact{
+  transition: all 1s;
+  margin-left: 25px;
+}
+.contact:hover{
+  transition: all 1s;
+  background-color: #B5D7E8;
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.github{
+    cursor: pointer;
+    height: 35px;
+    width: 62.23px;
+}
+/* Code Fake ENT V 5.4 END*/
